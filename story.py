@@ -1,5 +1,5 @@
-character_name = "mike"
-character_age = 21
+character_name = "roy"
+character_age = 19
 num_of_children = 0
 
 print("my name is " + character_name +" ")
