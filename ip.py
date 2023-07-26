@@ -1,18 +1,20 @@
 import re
 
 
+# Created the function is_valid_ipv4(argument: ip_address of type string)
+
 def is_valid_ipv4(ip_address):
-    if not (isinstance(ip_address,str)):
+    if not (isinstance(ip_address, str)):
         return False
 
-    # התבנית לבדיקת תקינות כתובת IP
+    # Pattrn ipv4
     pattern = r'^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$'
 
-    # בדיקת התאמה של הכתובת לתבנית
+    # Check For Matches
     match = re.match(pattern, ip_address)
 
     if match:
-        # המספרים נמצאים בטווח התקין לIPv4
+        #IPV4
         groups = match.groups()
         for group in groups:
             if not (0 <= int(group) <= 255):
@@ -21,6 +23,4 @@ def is_valid_ipv4(ip_address):
     else:
         return False
 
-
 # דוגמאות לבדיקה
-
