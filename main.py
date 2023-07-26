@@ -1,35 +1,11 @@
+import ip as p
 
-print("Enter first number")
-num1 = int(input("-->"))
+ip1 = "192.168.1.1"
+ip2 = "256.168.1.1"
+ip3 = "10.10.10.256"
+ip4 = "2001:0db8:85a3:0000:0000:8a2e:0370:7334"
+ips = [ip1, ip2, ip3, ip4]
 
-print("Enter second number")
-num2 = int(input("-->"))
-
-print("Addition")
-Addition = num2 + num1
-
-print(f"the sum of the numbers is {Addition}")
-
-print("subtraction")
-subtraction = num1 - num2
-
-print(f"the sum of the numbers is {subtraction}")
-
-print("multiplication")
-multiplication = num1 * num2
-
-print(f"the sum of the numbers is {multiplication}")
-
-print("division")
-division = num1 / num2
-
-print(f"the sum of the numbers is {division}")
-
-results = Addition,subtraction,multiplication,division
-smallest_result = min(results)
-largest_result = max(results)
-
-print(f"smallest result is {min(results)}")
-print(f"largest_result is {max(results)}")
-
-
+for ip in ips:
+    print(f'this is the IP:{ip}')
+    print(f'And its:{p.is_valid_ipv4(ip)}')
