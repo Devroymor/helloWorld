@@ -1,5 +1,5 @@
 import ip as p
-import now_own_my_own_gmail.py
+import is_gmail as g
 
 # seprated fucntion which was defined in ip.py
 ip1 = "192.168.1.1"
@@ -14,4 +14,14 @@ for ip in ips:
     print(f'And its:{p.is_valid_ipv4(ip)}')
 
 
-##test now_own_my_own_gmail.py
+##test is_gmail.py
+# test is_gmail.py
+mail1 = "example@gmail.com"
+mail2 = "bad_mail@.com"
+mail3 = "anotherexample@domain.com"
+mail4 = "wrong_mail@@gmail.com"
+mails = {mail1, mail2, mail3, mail4}
+
+for mail in mails:
+    print(f'This is the mail: {mail}')
+    print(f'Is this a valid mail: {g.is_valid_mail(mail)}\n')

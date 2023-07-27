@@ -14,7 +14,7 @@ def is_valid_ipv4(ip_address):
     match = re.match(pattern, ip_address)
 
     if match:
-        #IPV4
+        # IPV4
         groups = match.groups()
         for group in groups:
             if not (0 <= int(group) <= 255):
@@ -23,4 +23,5 @@ def is_valid_ipv4(ip_address):
     else:
         return False
 
-# דוגמאות לבדיקה
+
+
